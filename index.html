@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encuesta</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <script type="text/javascript" src="./handleEvents.js"></script>
+    </head>
+    <body>
+        <form>
+			<h1>Encuesta</h1>
+			<hr>
+            <fieldset>
+                <legend>General:</legend>
+                <img class="line" src="./images/happy.png">
+                <input class="line" name="general" type="range" min="0" max="100" 
+					onchange="changeForUpdatedGeneral(event);">
+                <img class="line" src="./images/sad.png">
+            </fieldset>
+            <label>Anclado:</label>
+            <input type="checkbox" name="anchored" checked>
+			<br>
+            <fieldset>
+                <legend>Riguroso:</legend>
+                <img class="line" src="./images/happy.png">
+                <input class="line" name="rigor" type="range" min="0" max="100" 
+					onchange="trace();">
+                <img class="line" src="./images/sad.png">
+            </fieldset>
+            <fieldset>
+                <legend>Creativo:</legend>
+                <img class="line" src="./images/happy.png">
+                <input class="line" name="creation" type="range" min="0" max="100" 
+					onchange="trace();">
+                <img class="line" src="./images/sad.png">
+            </fieldset>
+            <fieldset>
+                <legend>Atractivo:</legend>
+                <img class="line" src="./images/happy.png">
+                <input class="line" name="attraction" type="range" min="0" max="100" 
+					onchange="trace();">
+                <img class="line" src="./images/sad.png">
+            </fieldset>
+            <input value="enviar" type="button" onclick="trace();">
+        </form>
+    </body>
+</html>
